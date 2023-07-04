@@ -13,7 +13,8 @@ KWS undertakes conservation and management of wildlife resources across all prot
 
 
 <!-- Kenya Wildlife Service New website Dseign -->
-![View an action's log](./img/KWS-HOME.jpg)
+## Project design 
+![View an action's log](./img/bg-project.png)
 
 
 <!-- Table of Contents (Optional) -->
