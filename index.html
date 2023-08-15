@@ -8,11 +8,14 @@
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- custom css file link -->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 <!-- header section starts -->
+
 <header>
-    <div class="search-social">
+
+    <!-- <div class="search-social">
         <div class="search-bloc">
             <a href="#"><i class="fas fa-home"></i>Home</a>
             <a href="#"><i class="fas fa-search"></i>Search</a>
@@ -30,19 +33,32 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
+    </div> -->
+
+    <div class="fas fa-bars" id="menu-bar"></div> 
+
+    <a href="#">
+        <img src="./img/logo/kws-logo.png" alt="logo" class="logo">
+    </a>
+
+    <nav class="navbar">
+        <a href="#">About us</a>
+        <a href="#">Parks/Reserves</a>
+        <a href="#">Tourism</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
     </div>
-    <div class="nav">
-        <a href="#">
-            <img src="./img/logo/kws-logo.png" alt="logo">
-        </a>
-        <nav class="navbar">
-            <a href="#">About us</a>
-            <a href="#">Parks/Reserves</a>
-            <a href="#">Tourism</a>
-            <a href="#">Contact</a>
-        </nav>
-    </div>
-    <div class="book-info">
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+    <!-- <div class="book-info">
         <div class="book">
             <a href="#">Reservation <i class="fas fa-phone"></i> +254(0)726610533</a>
             <a href="#"><i class="fas fa-basket-shopping"></i> Book online</a>
@@ -51,14 +67,65 @@
         <div class="donate">
             <a href="#"><i class="fas fa-circle-dollar-to-slot"></i>Donate</a>
         </div>
-    </div>
+    </div> -->
 </header>
+
 <!-- header section ends -->
+
+
+<!-- Login form section starts -->
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="login-form-close"></i>
+
+    <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="Login now" class="btn">
+        <input type="checkbox" name="" id="remember">
+        <label for="remember">remember me</label>
+        <p>Forget password? <a href="#">Reset password</a></p>
+        <p>Don't have an account? <a href="#">Register now</a></p>
+    </form>
+</div>
+<!-- Login form section ends -->
+
+
+
+<!-- hme section starts -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>The beauty of Kenya</h3>
+        <p>Home of the african elephants</p>
+        <a href="#" class="btn">Explore Now</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="./video/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="./video/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="./video/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="./video/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="./video/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="./video/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+<!-- hme section ends -->
+
+<!-- spacies section start  -->
+
+
+<!-- spacies section end  -->
+
 
 
 
 
 <!-- custom js file link -->
-<script src="js/main.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
