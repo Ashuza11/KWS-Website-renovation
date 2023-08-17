@@ -738,17 +738,11 @@ header .search-bar-container label:hover {
    .credit .copy-box{
        gap: 1.5rem;
    }
-   header {
-        justify-content: flex-start;
-    }
 }
 
 @media (max-width:450px) {
     html {
         font-size: 50%;
-    }
-    header {
-        justify-content: flex-start;
     }
     .heading span {
         font-size: 2.5rem;
