@@ -1,3 +1,5 @@
+const chatbotToggle = document.querySelector('.chatbot-toggler');
+
 let searchBtn = document.querySelector('#search-btn');
 let searchBar = document.querySelector('.search-bar-container');
 let formBtn = document.querySelector('#login-btn');
@@ -6,6 +8,7 @@ let formClose = document.querySelector('#login-form-close');
 let menuBar = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
+
 
 window.onscroll = () => {
     searchBtn.classList.remove('fa-times');
@@ -43,3 +46,29 @@ videoBtn.forEach(btn => {
         document.querySelector('#video-slider').src = src;
     });
 });
+
+let swiper = new Swiper('.brand-slider', {
+    spaceBetween: 20,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+   breakpoints: {
+        450: {
+            slidesPerView: 2,
+        },
+       768: {
+           slidesPerView: 3,
+       },
+       991: {
+           slidesPerView: 4,
+       },
+       1200: {
+           slidesPerView: 5,
+       },
+   },
+});
+
+
+// chat-bot 
