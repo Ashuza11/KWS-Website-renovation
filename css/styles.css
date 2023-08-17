@@ -18,6 +18,7 @@
     background: var(--green);
     color: #fff;
 }
+
 html::-webkit-scrollbar{
     width: 1rem;
 }
@@ -646,7 +647,7 @@ header .search-bar-container label:hover {
    /* position: relative; */
    box-shadow: 0 0 128px 0 rgba(0, 0, 0, .1), 0 32px 64px -48px rgba(0, 0, 0, .5);
 }
-.show-chatbot .chatbot {
+.active .chatbot {
     transform: scale(1);
     opacity: 1;
     transition: .5s;
@@ -673,11 +674,11 @@ header .search-bar-container label:hover {
     font-size: 2.5rem;
     color: #fff
 }
-.show-chatbot .chatbot-toggler span:first-child,
+.active .chatbot-toggler span:first-child,
 .chatbot-toggler span:last-child {
     opacity: 0;
 }
-.show-chatbot .chatbot-toggler span:last-child {
+.active .chatbot-toggler span:last-child {
     opacity: 1;
     transition: .5s;
 }
@@ -734,11 +735,20 @@ header .search-bar-container label:hover {
        margin: 1.5rem 0;
        background: #222;
    }
+   .credit .copy-box{
+       gap: 1.5rem;
+   }
+   header {
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width:450px) {
     html {
         font-size: 50%;
+    }
+    header {
+        justify-content: flex-start;
     }
     .heading span {
         font-size: 2.5rem;

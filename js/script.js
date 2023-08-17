@@ -1,4 +1,5 @@
-const chatbotToggle = document.querySelector('.chatbot-toggler');
+let chatbotToggle = document.querySelector('.chatbot-toggler');
+let chatbot = document.querySelector('.chatboot-container');
 
 let searchBtn = document.querySelector('#search-btn');
 let searchBar = document.querySelector('.search-bar-container');
@@ -28,6 +29,10 @@ menuBar.addEventListener('click', () => {
 searchBtn.addEventListener('click', () => {
     searchBtn.classList.toggle('fa-times');
     searchBar.classList.toggle('active');
+})
+
+chatbotToggle.addEventListener('click', () => {
+    chatbot.classList.toggle('active');
 })
 
 formBtn.addEventListener('click', () => {
@@ -69,6 +74,3 @@ let swiper = new Swiper('.brand-slider', {
        },
    },
 });
-
-
-// chat-bot 
