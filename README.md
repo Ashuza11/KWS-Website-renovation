@@ -4,18 +4,34 @@
 _Make the KWS Website more a user-friendly, functional, and aesthetically pleasing._
 
 <!-- Kenya Wildlife Service -->
-**The Kenya Wildlife Service (KWS) conserves and manages Kenya’s wildlife for the Kenyan people and the world.**
+**[The Kenya Wildlife Service (KWS)](https://www.kws.go.ke/about-us/about-us) conserves and manages Kenya’s wildlife for the Kenyan people and the world.**
 
-It is a state corporation that was established by an Act of Parliament (Cap 376), now repealed by WCMA (2013), with the mandate to conserve and manage wildlife in Kenya, and to enforce related laws and regulations.
-KWS undertakes conservation and management of wildlife resources across all protected areas systems in collaboration with stakeholders. It is our goal to work with others to conserve, protect and sustainably manage wildlife resources. The community wildlife program of KWS in collaboration with others encourages biodiversity conservation by communities living on land essential to wildlife, such as wildlife corridors and dispersal lands outside parks and reserves. The premise is that " if people benefit from wildlife and other natural resources, then they will take care of these resources.
-
-<!-- Kenya Wildlife Service New website description -->
-
+### Kenya Wildlife service website 
+- [KWS](https://www.kws.go.ke/)
 
 <!-- Kenya Wildlife Service New website Dseign -->
-## Project design 
+### Proposed figma design
+
 ![View an action's log](./img/bg-project.png)
 
+### Proposed Prototype 
+This prototype is user-friendly and easy to navigate, with a clean and modern layout that highlights the KWS work and achievements. It's also optimised for search engines and include social media integration to help spread.
+
+- [KWS](https://ashuza11.github.io/KWS-Website-renovation/)
+
+
+### Technologies 
+ - HTML 
+ - CSS 
+ - Javascript 
+ - Ms virtual agent 
+ - Fgma 
+ - ...
+
+### Technologies 
+
+### Contributing 🤝
+Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
 
 <!-- Table of Contents (Optional) -->
 

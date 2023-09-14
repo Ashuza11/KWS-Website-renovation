@@ -37,7 +37,9 @@ html {
     scroll-behavior: smooth;
     scroll-behavior: smooth;
 }
-
+ul, li {
+    list-style: none;
+}
 
 
 section {
@@ -99,7 +101,8 @@ header .nav-bar-cotainer, .search-social, .book-info {
     justify-content: space-between;
 }
 
-header .nav-bar-cotainer .navbar a {
+
+/* header .nav-bar-cotainer .navbar a {
     font-size: 2rem;
     color: #fff;
     display: inline-block;
@@ -117,7 +120,120 @@ header .nav-bar-cotainer .icons i {
 }
 header .nav-bar-cotainer .icons i:hover {
     color:var(--green);
+} */
+
+
+
+
+/* Book-info ☪ 
+    /* Booking Info  */
+.book-info {
+    position: fixed;
+    top: 131px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #111111ab;
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 9%;
 }
+.book-info.hide {
+    display: none;
+}
+
+.book-info a {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+.book-info .donate i{
+    margin-right: .9rem; 
+}
+/* .book-info a:hover {
+    color: var(--green);
+} */
+book-info end  */
+
+
+
+
+/* New nav-bar design  */
+header .navbar ul {
+    list-style: none; 
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+    position: relative;
+}
+
+header .navbar li a::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--green);
+    position: absolute;
+    top: -.75rem;
+    left: 0;
+    right: 0;
+    transform: scale(0,1);
+    transition: transform ease-in-out 250ms;
+}
+
+header .navbar a:hover::before {
+    transform: scale(1,1);
+}
+
+header .navbar a:hover{
+    color: var(--green)
+}
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 256px;
+    margin: 0;
+    padding: 25px 0;
+    background: #333;
+    z-index: 2000;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+}
+ 
+
+header .navbar ul li ul li a {
+    padding: 4px 10px 4px 30px;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #eee
+}
+ 
+
+header .navbar ul li:hover > ul {
+    display: initial;
+    transition: 0.3s ease-in;
+}
+
+header .navbar ul li ul li:hover {
+   transition: .3s linear; 
+   padding-left: 45px;
+}
+
+/* End nav-bar */
+
 
 header .nav-bar-cotainer .search-bar-container {
     position: absolute;
@@ -171,33 +287,7 @@ header .search-social .search-bloc i:hover {
 header .search-social .social-bloc i:hover {
     color:var(--green);
 }
-/* Booking Info  */
-.book-info {
-    position: fixed;
-    top: 131px;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: #111111ab;
-    display: flex;
-    justify-content: space-between;
-    padding: .8rem 9%;
-}
-.book-info.hide {
-    display: none;
-}
 
-.book-info a {
-    font-size: 1.4rem;
-    color: #fff;
-    margin-left: .9rem;
-}
-.book-info .donate i{
-    margin-right: .9rem; 
-}
-.book-info a:hover {
-    color: var(--green);
-}
 
 header .search-social .search-bloc i {
     font-size: 1.5rem;
