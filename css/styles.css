@@ -87,32 +87,39 @@ header {
     z-index: 1000;
     background: #333;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    gap: .3rem;
     padding: 2rem 9%;
 }
-    
-header .navbar a {
+header .nav-bar-cotainer, .search-social, .book-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav-bar-cotainer .navbar a {
     font-size: 2rem;
     color: #fff;
     display: inline-block;
     margin: 0 .8rem;
 }
-header .navbar a:hover {
+header .nav-bar-cotainer .navbar a:hover {
     color:var(--green);
 }
 
-header .icons i {
-    font-size: 2.5rem;
+header .nav-bar-cotainer .icons i {
+    font-size: 2rem;
     color: #fff;
     cursor: pointer;
     margin-left: 2rem;
 }
-header .icons i:hover {
+header .nav-bar-cotainer .icons i:hover {
     color:var(--green);
 }
 
-header .search-bar-container {
+header .nav-bar-cotainer .search-bar-container {
     position: absolute;
     top: 100%; left: 0; right: 0;
     padding: 1.5rem 2rem;
@@ -123,15 +130,15 @@ header .search-bar-container {
     z-index: 1001;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
-header .search-bar-container.active {
+header .nav-bar-cotainer .search-bar-container.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-header .navbar.active {
+header .nav-bar-cotainer .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-header .search-bar-container #search-bar {
+header .nav-bar-cotainer .search-bar-container #search-bar {
     width: 100%;
     padding: 1rem;
     text-transform: none;
@@ -139,15 +146,75 @@ header .search-bar-container #search-bar {
     font-size: 1.7rem;
     border-radius: .5rem;
 }
-header .search-bar-container label {
+header .nav-bar-cotainer .search-bar-container label {
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
     margin-left: 1.5rem;
 }
-header .search-bar-container label:hover {
+header .nav-bar-cotainer .search-bar-container label:hover {
     color:var(--green);
 }
+/* header Icons  */
+header .search-social {
+    border-bottom: .1px solid rgba(255, 255, 255, .2);
+    padding-bottom: .6rem;
+}
+header .search-social a {
+    font-size: 1.5rem;
+    color: #fff;
+    display: inline-block;
+}
+header .search-social .search-bloc i:hover {
+    color:var(--green);
+}
+header .search-social .social-bloc i:hover {
+    color:var(--green);
+}
+/* Booking Info  */
+.book-info {
+    position: fixed;
+    top: 131px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #111111ab;
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 9%;
+}
+.book-info.hide {
+    display: none;
+}
+
+.book-info a {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-left: .9rem;
+}
+.book-info .donate i{
+    margin-right: .9rem; 
+}
+.book-info a:hover {
+    color: var(--green);
+}
+
+header .search-social .search-bloc i {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+header .search-social .social-bloc i {
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+
+
 
 .login-form-container {
     position: fixed;
@@ -520,7 +587,12 @@ header .search-bar-container label:hover {
     height: 100px;
     width: 100px;
 }
-
+.brand-container .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 /* footer section */
 .footer {
     background: #333;
@@ -715,6 +787,23 @@ header .search-bar-container label:hover {
     section {
         padding: 2rem;
     }
+    /* .book-info {
+        position: fixed;
+        top: 123px;
+        left: 0;
+        right: 0;
+    } */
+}
+
+/* Booking info  */
+@media (max-width: 991px) and (max-width: 1200px) {
+    .book-info {
+        position: fixed;
+        top: 123px;
+        left: 0;
+        right: 0;
+    }
+    
 }
 
 @media (max-width:768px) {
@@ -729,16 +818,21 @@ header .search-bar-container label:hover {
        padding: 1rem 2rem;
        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
    }
-   header .navbar a {
+   header .nav-bar-cotainer .navbar a {
        display: block;
+       width: 100%;
        border-radius: .5rem;
        padding: 1rem;
-       margin: 1.5rem 0;
+       margin: 1rem 0;
        background: #222;
+
    }
    .credit .copy-box{
        gap: 1.5rem;
    }
+   .book-info {
+        display: none;
+    }
 }
 
 @media (max-width:450px) {
@@ -763,5 +857,11 @@ header .search-bar-container label:hover {
     }
     .chatbot iframe {
         height: 90%;
+    }
+    .social-bloc {
+        display: none;
+    }
+    .search-bloc, .social-md {
+        margin: 0 auto;
     }
 }

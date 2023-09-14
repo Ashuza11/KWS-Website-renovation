@@ -9,6 +9,7 @@ let formClose = document.querySelector('#login-form-close');
 let menuBar = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
+const bookInfo = document.querySelector('.book-info');
 
 
 window.onscroll = () => {
@@ -29,6 +30,8 @@ menuBar.addEventListener('click', () => {
 searchBtn.addEventListener('click', () => {
     searchBtn.classList.toggle('fa-times');
     searchBar.classList.toggle('active');
+    bookInfo.classList.toggle('hide');
+
 })
 
 chatbotToggle.addEventListener('click', () => {
