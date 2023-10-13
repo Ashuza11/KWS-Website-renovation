@@ -77,3 +77,28 @@ let swiper = new Swiper('.brand-slider', {
        },
    },
 });
+
+
+// Intersection Observer
+ratio = .1
+const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: .1
+  };
+
+ const handleIntersect = function (entries, observer) {
+    entries.forEach(function (entry) {
+        if (entry.intersectionRatio > ratio) {
+            entry.target.classList.remove('reveal');
+            observer.unobserve(entry.target);
+        } 
+        
+    })
+    console.log('handleIntersect');
+ }
+  
+  const observer = new IntersectionObserver(handleIntersect, options);
+  document.querySelectorAll('.reveal').forEach(function (r) {
+    observer.observe(r);
+  })
